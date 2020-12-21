@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    background-color: #0C122C;
+}
+.fixed {
+    position: fixed;
+    bottom: 0px;
+    background-size:cover;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+}
+
+.left {
+    background-color: #1E2D69;
+    border-radius: 10px 50px 10px 10px;
+    padding: 30px 60px 30px 30px;
+    position: relative;
+    top: 50px;
+}
+
+.right {
+    background-color: #1E2D69;
+    padding: 15px;
+    position: relative;
+    top: 50px;
+    color: white;
+    box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+    border-radius: 10px;
+    width: 540px;
+    font-family: 'Raleway', sans-serif; 
+}
+
+#myProgress {
+    width: 100%;
+    background-color: #0C122C;
+    border-radius: 10px;
+    height: 15px;
+  }
+  
+  #myBar {
+    width: 80%;
+    height: 30px;
+    background-image: linear-gradient(to right, rgba(255,161,151,1), rgba(255,74,149,1));
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: white;
+    height: 15px;
+    border-radius: 10px;
+  }
+
+  span {
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      color: black;
+      font-weight: bold;
+      position: relative;
+      top: -70px;
+      left: 400px;
+      font-size: 20px;
+  }
+
+  
+  .storage {
+      display: flex;
+      justify-content: space-between;
+  }
+  .storage p {
+      font-weight: bold; 
+  }
+
+  
+  /* this is mobile design */
+
+  @media screen and (max-width: 600px) {
+
+    body{
+        background-image: url(images/bg-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .fixed {
+        display: none;
+    }
+    .container {
+        display: block;
+        position: absolute;
+        width: 326px;
+        height: 413px;
+        left: 60px; 
+        top: 127px; 
+        padding: 70px 0;
+        text-align: center;
+        
+    }
+    
+    .left {
+        background-color: #1E2D69;
+        border-radius: 10px 100px 10px 10px;
+        padding: 30px 60px 30px 30px;
+        /* position: relative;
+        top: 50px;
+        width: 270px;
+        margin: 0 auto; */
+        width: 270px;
+    }
+    
+    .right {
+        background-color: #1E2D69;
+        padding: 15px;
+        /* position: relative;
+        top: 50px; */
+        color: white;
+        box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+        border-radius: 10px;
+        width: 326px;
+        font-family: 'Raleway', sans-serif; 
+        margin: 20px auto;
+    }
+    
+    #myProgress {
+        width: 100%;
+        background-color: #0C122C;
+        border-radius: 10px;
+        height: 15px;
+      }
+      
+      #myBar {
+        width: 80%;
+        height: 30px;
+        background-image: linear-gradient(to right, rgba(255,161,151,1), rgba(255,74,149,1));
+        text-align: center; /* To center it horizontally (if you want) */
+        line-height: 30px; /* To center it vertically */
+        color: white;
+        height: 15px;
+        border-radius: 10px;
+      }
+    
+      span {
+          background-color: white;
+          padding: 10px;
+          border-radius: 10px;
+          color: black;
+          font-weight: bold;
+          position: relative;
+          top: 125px;
+          left: 5px;
+          font-size: 20px;
+      }
+    
+      
+      .storage {
+          display: flex;
+          justify-content: space-between;
+      }
+      .storage p {
+          font-weight: bold; 
+      }
+  }
